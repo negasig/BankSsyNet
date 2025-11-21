@@ -54,12 +54,12 @@ public class CustomerController : ControllerBase
         return Ok($"Customer with ID {id} has been deleted");
     }
     [HttpPut("{id}")]
-    public ActionResult updateCustomer(int id, Customer updatedCustomer)
+    public ActionResult UpdateCustomer(int id, Customer updatedCustomer)
     {
         var existingCustomer = _context.Customer.Find(id);
         if (existingCustomer == null)
         {
-            return NotFound($"Customer with ID {id} not found");
+            return NotFound($"Customer with ID {id} Not found");
         }
         existingCustomer.FirstName = updatedCustomer.FirstName;
         existingCustomer.LastName = updatedCustomer.LastName;
