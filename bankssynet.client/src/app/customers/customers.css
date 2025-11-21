@@ -1,0 +1,18 @@
+
+td, th {
+  padding: 5px;
+  border-bottom: 1px solid #ddd;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+th{
+    height: 40px;
+    text-align:left;
+    font-weight:bold;
+    font-size:16px;
+}
+td{
+    text-align:left;
+}

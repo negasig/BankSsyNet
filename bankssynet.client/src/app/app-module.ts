@@ -8,6 +8,8 @@ import { Home } from './home/home';
 import { Customers } from './customers/customers';
 import { Transactions } from './transactions/transactions';
 import { About } from './about/about';
+import { NavMenu } from './nav-menu/nav-menu';
+import { RouterLink } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -15,11 +17,12 @@ import { About } from './about/about';
     Home,
     Customers,
     Transactions,
-    About
+    About,
+    NavMenu
   ],
   imports: [
     BrowserModule, HttpClientModule,
-    AppRoutingModule,
+    AppRoutingModule, RouterLink
   ],
   providers: [
     provideBrowserGlobalErrorListeners()

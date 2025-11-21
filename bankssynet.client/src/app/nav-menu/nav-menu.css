@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    justify-content: center;
+    box-shadow:inherit;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+  nav a:hover{
+    text-decoration: none;
+    color: white;
+    padding: 4px;
+    background-color:black
+  }
