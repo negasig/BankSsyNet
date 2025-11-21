@@ -71,6 +71,6 @@ public class CustomerController : ControllerBase
     }
     public ActionResult<Customer> Login()
     {
-        return Ok("Negasi g");
+        return Ok("Negasi gide");
     }
 }
