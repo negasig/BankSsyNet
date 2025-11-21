@@ -69,7 +69,7 @@ public class CustomerController : ControllerBase
         _context.SaveChanges();
         return Ok(existingCustomer);
     }
-    public ActionResult<Customer> Loginnn()
+    public ActionResult<Customer> Login()
     {
         return Ok("loged inn");
     }
