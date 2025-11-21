@@ -49,6 +49,24 @@ public class CustomerController : ControllerBase
         {
             return NotFound($"Customer with ID {id} not found");
         }
+        _context.Customer.Remove(cus);
+        _context.SaveChanges();
         return Ok($"Customer with ID {id} has been deleted");
+    }
+    [HttpPut("{id}")]
+    public ActionResult updateCustomer(int id, Customer updatedCustomer)
+    {
+        var existingCustomer = _context.Customer.Find(id);
+        if (existingCustomer == null)
+        {
+            return NotFound($"Customer with ID {id} not found");
+        }
+        existingCustomer.FirstName = updatedCustomer.FirstName;
+        existingCustomer.LastName = updatedCustomer.LastName;
+        existingCustomer.Email = updatedCustomer.Email;
+        existingCustomer.City = updatedCustomer.City;
+        existingCustomer.Balance = updatedCustomer.Balance;
+        _context.SaveChanges();
+        return Ok(existingCustomer);
     }
 }
