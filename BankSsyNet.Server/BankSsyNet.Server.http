@@ -1,0 +1,6 @@
+@BankSsyNet.Server_HostAddress = http://localhost:5087
+
+GET {{BankSsyNet.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

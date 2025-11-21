@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="bankssynet.client/bankssynet.client.esproj">
+    <Build />
+    <Deploy />
+  </Project>
+  <Project Path="BankSsyNet.Server/BankSsyNet.Server.csproj" />
+</Solution>

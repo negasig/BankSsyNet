@@ -1,0 +1,22 @@
+<h1>List Of Customers</h1>
+
+<table *ngIf="customers">
+  <thead>
+    <tr>
+      <th>firstName</th>
+      <th>LastName</th>
+      <th>Email</th>
+      <th>City</th>
+      <th>Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor ="let cus of customers">
+      <td>{{cus.firstName}}</td>
+      <td>{{cus.lastName}}</td>
+      <td>{{cus.email}}</td>
+      <td>{{cus.city}}</td>
+      <td>{{cus.balance}}</td>
+    </tr>
+  </tbody>
+</table>
