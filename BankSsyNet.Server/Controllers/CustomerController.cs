@@ -69,8 +69,10 @@ public class CustomerController : ControllerBase
         _context.SaveChanges();
         return Ok(existingCustomer);
     }
+    [HttpPost("login")]
     public ActionResult<Customer> Login()
     {
-        return Ok("Negasi g");
+
+        return Ok("Negasi Gide");
     }
 }
